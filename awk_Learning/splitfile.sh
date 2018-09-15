@@ -3,8 +3,8 @@
 # Author: Calvin,Xu
 # sh splitfile.sh buyingData
 
-filename="output"
-# 以Tab为分隔符读入数据，同时传入外部shell变量
+filename="$1"
+# 以Tab为分隔符读入数据，同时传入外部shell变量(外部shell变量通过-v形式传入)
 awk -F'\t' -v outputname="$filename" \
 'BEGIN{OFS="\t"}   # 以tab为分隔符输出数据
 {
@@ -23,4 +23,4 @@ awk -F'\t' -v outputname="$filename" \
     # 此处重定向不同于shell的重定向。在这里首次输出会清空文件，后续是增加。
     # 详细说明见官方文档: https://www.gnu.org/software/gawk/manual/html_node/Redirection.html
     print user, merchant, product, buyingTime > outputname"_"buyingTime;
-}' $1
+}' $filename
