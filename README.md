@@ -1,2 +1,1 @@
-# MySQL-Practice
-MySQL学习，持续更新...
+# 项目框架的学习
