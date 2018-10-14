@@ -25,5 +25,5 @@ error_command: command not found
 ```
 同时，在当前log目录的文件也记录相应的日志，其中不存在shell本身输出的第6行信息。
 
-## Conclustion
+## Conclusion
 该shell日志输出功能将脚本日志输出到屏幕的同时，也将日志信息存在log文件夹下对应的日志，方便日后的分析。
