@@ -11,7 +11,7 @@ Precision(查准率，也叫精准率)、Recall(查全率，也叫召回率、�
 
 根据真实情况与预测情况的组合可以将类别分为真正例(True Positive)、假正例(False Positive)、真反例(True Negative)、假反例(False Negative)四种情形，如表1所示。
 
-<center>表1 分类结果混淆矩阵</center>
+<div align=center>表1 分类结果混淆矩阵</div>
 
 <div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/confusion_matrix_01.png" width="60%" height="60%"></div>
 
@@ -19,7 +19,7 @@ Precision(查准率，也叫精准率)、Recall(查全率，也叫召回率、�
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="20%" height="20%">
 
-<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall.png" width="22%" height="22%">
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall.png" width="23%" height="23%">
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR.png" width="18%" height="18%">
 
@@ -70,7 +70,7 @@ NPV=55.56%; TNR=27.78%; FNR=18.18%.
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="20%" height="20%">
 
-<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall_innerLabel1.png" width="22%" height="22%">
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall_innerLabel1.png" width="24%" height="24%">
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR_innerLabel0.png" width="18%" height="18%">
 
