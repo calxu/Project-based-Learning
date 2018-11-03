@@ -13,7 +13,7 @@ Precision(查准率，也叫精准率)、Recall(查全率，也叫召回率、�
 
 <center>表1 分类结果混淆矩阵</center>
 
-![image](confusion_matrix_01.png)
+![image](https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/confusion_matrix_01.png)
 
 其中Precision、Recall和FPR分别定义为：
 
@@ -58,13 +58,13 @@ NPV=55.56%; TNR=27.78%; FNR=18.18%.
 
 <center>表2 分类结果混淆矩阵</center>
 
-![image](confusion_matrix_02.png)
+![image](https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/confusion_matrix_02.png)
 
 这里以准备好的platA.txt和platB.txt数据作详细的说明，platA.txt与platB.txt的数据集存在交集(**但并非完全一致**），我们需要依据platA.txt的真实情况判断platB.txt的置信情况，内部平台与外部平台数据结果分布情况如表3所示（**注：此处预测数据集并非完全等于真实数据集**）。
 
 <center>表3 内外部平台数据分布情况</center>
 
-![image](confusion_matrix_03.png)
+![image](https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/confusion_matrix_03.png)
 
 如果聚焦外部B平台标签为1(即关注电子产品数>=5)的用户的情况，则
 
