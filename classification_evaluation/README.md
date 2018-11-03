@@ -17,11 +17,11 @@ Precision(查准率，也叫精准率)、Recall(查全率，也叫召回率、�
 
 其中Precision、Recall和FPR分别定义为：
 
-<div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="40%" height="40%"></div>
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="40%" height="40%">
 
-<div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall.png" width="40%" height="40%"></div>
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall.png" width="40%" height="40%">
 
-<div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR.png" width="30%" height="30%"></div>
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR.png" width="30%" height="30%">
 
 **注：以上的TP+FN是真实情况所有的正例数；FP+TN是真实情况所有的负例数。即预测数据和真实情况是完全一致的**
 
@@ -68,24 +68,21 @@ NPV=55.56%; TNR=27.78%; FNR=18.18%.
 
 如果聚焦外部B平台标签为1(即关注电子产品数>=5)的用户的情况，则
 
-<div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="40%" height="40%"></div>
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="40%" height="40%">
 
-<div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall_innerLabel1.png" width="40%" height="40%"></div>
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall_innerLabel1.png" width="40%" height="40%">
 
-<div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR_innerLabel0.png" width="30%" height="30%"></div>
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR_innerLabel0.png" width="30%" height="30%">
 
 **这里求Recall和FPR时，我们分母未直接取(TP+FN)、(FP+TN)，而是取innerLabel0和innerLabel1。因为TP+FN是innerLabel1的子集(并非真实情况中全部Label=1的情况)，评估时重点关注外部数据集在内部平台的召回情况，FPR同理。而西瓜书P30中(即表1)真实情况和预测结果的数据集是同一批数据，但往往现实项目中两个平台的数据并非完全一致，只是存在交集，这时我们需要根据交集的效果从而评估整个数据集的效果。Precision重点关注在内部平台上的准确率，所以分母取得是(TP+FP)。**
 
 如果聚焦外部B平台标签为0(即关注电子产品数=0)的用户情况，则
 
-<div align=center><img src="
-https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/NPV.png" width="40%" height="40%"></div>
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/NPV.png" width="40%" height="40%">
 
-<div align=center><img src="
-https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/TNR.png" width="40%" height="40%"></div>
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/TNR.png" width="40%" height="40%">
 
-<div align=center><img src="
-https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FNR.png" width="30%" height="30%"></div>
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FNR.png" width="30%" height="30%">
 
 **NPV、TNR和FNR这几个指标非常不常用，但是我们反过来想就能一下子想明白，若我们聚焦的是外部B平台标签为0的用户，假使我们把标为为0的用户定义为1，NPV就对应Precision，TNR对应Recall(TPR)，FNR对应FPR(业务中也尝称为误杀)。**
 
