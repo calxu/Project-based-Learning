@@ -69,6 +69,7 @@ NPV=55.56%; TNR=27.78%; FNR=18.18%.
 
 如果聚焦外部B平台标签为1(即关注电子产品数>=5)的用户的情况，则
 
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 $$Precision=\frac{TP}{TP+FP}$$
 
 $$Recall=TPR=\frac{TP}{innerLabel1}$$
