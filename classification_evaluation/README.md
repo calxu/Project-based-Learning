@@ -19,7 +19,7 @@ Precision(查准率，也叫精准率)、Recall(查全率，也叫召回率、�
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="20%" height="20%">
 
-<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall.png" width="25%" height="25%">
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall.png" width="22%" height="22%">
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR.png" width="18%" height="18%">
 
@@ -70,7 +70,7 @@ NPV=55.56%; TNR=27.78%; FNR=18.18%.
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="20%" height="20%">
 
-<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall_innerLabel1.png" width="30%" height="30%">
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall_innerLabel1.png" width="22%" height="22%">
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR_innerLabel0.png" width="18%" height="18%">
 
@@ -78,11 +78,11 @@ NPV=55.56%; TNR=27.78%; FNR=18.18%.
 
 如果聚焦外部B平台标签为0(即关注电子产品数=0)的用户情况，则
 
-<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/NPV.png" width="15%" height="15%">
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/NPV.png" width="18%" height="18%">
 
-<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/TNR.png" width="15%" height="15%">
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/TNR.png" width="18%" height="18%">
 
-<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FNR.png" width="15%" height="15%">
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FNR.png" width="18%" height="18%">
 
 **NPV、TNR和FNR这几个指标非常不常用，但是我们反过来想就能一下子想明白，若我们聚焦的是外部B平台标签为0的用户，假使我们把标为为0的用户定义为1，NPV就对应Precision，TNR对应Recall(TPR)，FNR对应FPR(业务中也尝称为误杀)。**
 
