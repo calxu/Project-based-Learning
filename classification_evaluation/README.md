@@ -13,13 +13,13 @@ Precision(查准率，也叫精准率)、Recall(查全率，也叫召回率、�
 
 <center>表1 分类结果混淆矩阵</center>
 
-<div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/confusion_matrix_01.png" width="50%" height="50%"></div>
+<div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/confusion_matrix_01.png" width="70%" height="70%"></div>
 
 其中Precision、Recall和FPR分别定义为：
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 
 $$Precision=\dfrac{TP}{TP+FP}$$
 
