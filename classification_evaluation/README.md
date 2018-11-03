@@ -1,7 +1,7 @@
 # 二分类问题的性能评估
 这里整理了实际项目中二分类评测三大类常用指标的代码，方便以后的直接调用。适用于我们依据真实情况的分布，判断外部数据集置信程度。
 
-## 1.基础知识
+## 1. 基础知识
 Precision(查准率，也叫精准率)、Recall(查全率，也叫召回率、真正例率)、FPR(假正例率，在业务中有时也叫误杀率)这三个评估指标是二分类问题中经常用到指标。
 
 > 用周志华机器学习西瓜书P30里对这三个指标的案例描述：
@@ -19,7 +19,7 @@ Precision(查准率，也叫精准率)、Recall(查全率，也叫召回率、�
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="20%" height="20%">
 
-<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall.png" width="23%" height="23%">
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall.png" width="24%" height="24%">
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR.png" width="18%" height="18%">
 
@@ -56,13 +56,13 @@ NPV=55.56%; TNR=27.78%; FNR=18.18%.
 
 在这里我们以内部A平台为真实情况，以外部B平台为部分预测结果，Label=1为关注电子产品数大于5的用户，Label=0为未关注电子产品的用户，相应的与表1对照关系如下表所示。
 
-<center>表2 分类结果混淆矩阵</center>
+<div align=center>表2 分类结果混淆矩阵</div>
 
 <div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/confusion_matrix_02.png" width="60%" height="60%"></div>
 
 这里以准备好的platA.txt和platB.txt数据作详细的说明，platA.txt与platB.txt的数据集存在交集(**但并非完全一致**），我们需要依据platA.txt的真实情况判断platB.txt的置信情况，内部平台与外部平台数据结果分布情况如表3所示（**注：此处预测数据集并非完全等于真实数据集**）。
 
-<center>表3 内外部平台数据分布情况</center>
+<div align=center>表3 内外部平台数据分布情况</div>
 
 <div align=center><img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/confusion_matrix_03.png" width="60%" height="60%"></div>
 
