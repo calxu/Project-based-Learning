@@ -10,9 +10,9 @@ else
     outer_data=$2
 fi
 
-# 选择label为1的作为待测试数据
+# 测评外部数据的置信度
 awk -F'\t' \
-'BEGIN{ innerBoth=0; innerLabel0=0; innerLabel1=0; outerBoth=0; outerLabel0=0; outerLabel1=0; \
+'BEGIN{ innerBoth=0; innerLabel1=0; innerLabel0=0; outerBoth=0; outerLabel1=0; outerLabel0=0; \
         TP=0; FN=0; FP=0; TN=0 }
 {
     if (ARGIND == 1)
@@ -66,7 +66,15 @@ awk -F'\t' \
  
 END{
     OFS="\t"; 
-    printf("内部平台数据总量%d; 标签为1的数量%d; 标签为0的数量%d.\n", innerBoth, innerLabel1, innerLabel0);
-    printf("外部平台数据总量%d; 标签为1的数量%d; 标签为0的数量%d.\n", outerBoth, outerLabel1, outerLabel0);
-    printf("内部0交外部0(TP)=%d; 内部0交外部1(FN)=%d; 内部1交外部0(FP)=%d; 内部1交外部1(TN)=%d. \n", TP, FN, FP, TN);
+    printf("内部A平台数据总量%d; 标签为1的数量%d; 标签为0的数量%d.\n", innerBoth, innerLabel1, innerLabel0);
+    printf("外部B平台数据总量%d; 标签为1的数量%d; 标签为0的数量%d.\n", outerBoth, outerLabel1, outerLabel0);
+    printf("A平台1交B平台1(TP)=%d; A平台1交B平台0(FN)=%d; A平台0交B平台1(FP)=%d; A平台0交B平台0(TN)=%d.\n\n", TP, FN, FP, TN);
+    
+    # 聚焦外部平台Label=1的数据分布
+    printf("外部B平台中关注电子产品数量>=5(即Label=1)在内部A平台上的Precision、Recall和FPR指标: \
+           \nPrecision=%.2f%%; Recall=%.2f%%; FPR=%.2f%%.\n\n", TP/(TP+FP)*100.0, TP/innerLabel1*100.0, FP/innerLabel0*100.0);
+    
+    # 聚焦外部平台Label=0的数据分布
+    printf("外部B平台B中关注电子产品数量=0(即Label=0)在内部A平台上的对应的指标:\
+           \nNPV=%.2f%%; TNR=%.2f%%; FNR=%.2f%%.\n", TN/(TN+FN)*100.0, TN/innerLabel0*100.0, FN/innerLabel1*100.0);
  }' $inner_data $outer_data
