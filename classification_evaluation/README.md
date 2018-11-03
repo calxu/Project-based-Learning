@@ -18,6 +18,9 @@ Precision(查准率，也叫精准率)、Recall(查全率，也叫召回率、�
 其中Precision、Recall和FPR分别定义为：
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+
 $$Precision=\dfrac{TP}{TP+FP}$$
 
 $$Recall=TPR=\dfrac{TP}{TP+FN}$$
