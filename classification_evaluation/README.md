@@ -19,7 +19,7 @@ Precision(查准率，也叫精准率)、Recall(查全率，也叫召回率、�
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="20%" height="20%">
 
-<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall.png" width="24%" height="24%">
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall.png" width="25%" height="25%">
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR.png" width="18%" height="18%">
 
@@ -70,7 +70,7 @@ NPV=55.56%; TNR=27.78%; FNR=18.18%.
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Precision.png" width="20%" height="20%">
 
-<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall_innerLabel1.png" width="24%" height="24%">
+<img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/Recall_innerLabel1.png" width="25%" height="25%">
 
 <img src="https://raw.githubusercontent.com/idKevin/Project-based-Learning/assets/images/FPR_innerLabel0.png" width="18%" height="18%">
 
